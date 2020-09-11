@@ -1,2 +1,2 @@
-# PoliToGruppiBot
-Telegram Bot for groups' collecting purpose.
+# ReputationBot
+Telegram Bot for groups' entertainment.
