@@ -113,6 +113,13 @@ function handleGroupUpdate($userid, $chatid, $tor, $text, $update) {
                 topRep($chatid,$n);
             break;
             case "/toprep@reputationlistbot":
+                if(isset($textarraylw[1]) && is_numeric($textarraylw[1])) {
+                    $n = $textarraylw[1];
+                    if($n > 25 || $n <= 0)
+                        $n = 25;
+                } else {
+                    $n = 10;
+                }
                 topRep($chatid,$n);
             break;
             case "/myrep":
